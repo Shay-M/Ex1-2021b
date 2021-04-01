@@ -1,0 +1,21 @@
+Token					Lexeme					Attributes
+-----					------					----------
+
+STARTML					<oubegin>
+START_CENTER			<c>
+BEGIN_HEADING_MARK		<h1>					Size 1
+STRING					 Compilation course HomePage 
+END_HEADING_MARK		</H1>					Size 1
+END_CENTER				</C>
+BEGIN_COMMENT			<!!
+STRING2					 This is a comment, and!!! it should be ignored 
+END_COMMENT				!!>
+BEGIN_HEADING_MARK		<h4>					Size 4
+STRING
+SET_TEXT_COLOR			<text color="red">		Color red
+BEGIN_REGULAR_BULLET	<bl>
+STRING					A.Aho, R.Sethi, J.Ullman, Compilers: principles, techniques and tools. 
+NEWLINE					<nl>
+STRING					C,Fisher, R.LeBlanc, Crafting a compiler. 
+BEGIN_REGULAR_BULLET	</BL>
+ENDML					<ouend>
